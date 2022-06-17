@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="back-color">
+            <h1 id="title" class="m-bottom_1rem">freeCodeCamp Survey Form</h1>
+            <p id="description" class="font-size_16px line-height">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </header>
+        <div class="container">
+            <form id="survey-form">
+                <div class="input-field">
+                    <label
+                        for="name"
+                        class="display-block_width-100 font-size_16px m-bottom_1rem f-weight_bold"
+                        >Name</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                        class="back-color display-block_width-100 font-size_16px m-bottom_3rem"
+                    />
+                    <label
+                        for="email"
+                        class="display-block_width-100 font-size_16px m-bottom_1rem f-weight_bold"
+                        >Email</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                        class="back-color display-block_width-100 font-size_16px m-bottom_3rem"
+                    />
+                    <label
+                        for="number"
+                        class="display-block_width-100 font-size_16px m-bottom_1rem f-weight_bold"
+                        >Age (optional)</label
+                    >
+                    <input
+                        type="number"
+                        id="number"
+                        placeholder="Age"
+                        min="21"
+                        max="60"
+                        class="back-color display-block_width-100 font-size_16px m-bottom_3rem"
+                    />
+                </div>
+                <div class="drop-down m-bottom_3rem">
+                    <label
+                        class="display-block_width-100 font-size_16px m-bottom_1rem f-weight_bold line-height"
+                    >
+                        Which option best describes your current role?
+                    </label>
+                    <select
+                        name="dropdown"
+                        id="dropdown"
+                        title="dropdown"
+                        class="back-color display-block_width-100 font-size_16px"
+                    >
+                        <option value="title" disabled selected>
+                            Select current role
+                        </option>
+                        <option value="student">Student</option>
+                        <option value="job-seeker">Job seeker</option>
+                    </select>
+                </div>
+                <div class="radio-btn font-size_16px m-bottom_3rem">
+                    <label
+                        class="label display-block_width-100 m-bottom_1rem line-height"
+                    >
+                        Would you recommend freeCodeCamp to a friend?
+                    </label>
+                    <div class="radio-btn-div1 m-bottom_1rem">
+                        <input
+                            type="radio"
+                            name="recommendation"
+                            id="definitely"
+                        />
+                        <label for="definitely">Definitely</label>
+                    </div>
+                    <div class="radio-btn-div2">
+                        <input type="radio" name="recommendation" id="maybe" />
+                        <label for="maybe">Maybe</label>
+                    </div>
+                </div>
+                <div class="checkbox font-size_16px">
+                    <label
+                        class="label display-block_width-100 m-bottom_1rem line-height"
+                    >
+                        What would you like to see improved? (Check all that
+                        apply)
+                    </label>
+                    <div class="checkbox-div1 m-bottom_1rem">
+                        <input
+                            type="checkbox"
+                            name="improvement"
+                            id="front-end"
+                        />
+                        <label for="front-end">Fron-end projects</label>
+                    </div>
+                    <div class="checkbox-div2">
+                        <input
+                            type="checkbox"
+                            name="improvement"
+                            id="back-end"
+                        />
+                        <label for="back-end">Back-end projects</label>
+                    </div>
+                </div>
+                <div class="textarea font-size_16px">
+                    <p class="textarea-title m-bottom_1rem">
+                        Any comments or suggestions?
+                    </p>
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <div class="submit-btn">
+                    <input
+                        type="submit"
+                        value="Submit"
+                        class="font-size_16px f-weight_bold"
+                    />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
